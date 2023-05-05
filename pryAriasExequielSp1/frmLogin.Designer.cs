@@ -70,7 +70,9 @@
             // 
             // txtUsuario
             // 
+            this.txtUsuario.ForeColor = System.Drawing.Color.Blue;
             this.txtUsuario.Location = new System.Drawing.Point(132, 30);
+            this.txtUsuario.MaxLength = 10;
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(151, 20);
             this.txtUsuario.TabIndex = 3;
@@ -78,14 +80,21 @@
             // txtContraseña
             // 
             this.txtContraseña.Location = new System.Drawing.Point(132, 74);
+            this.txtContraseña.MaxLength = 10;
             this.txtContraseña.Name = "txtContraseña";
+            this.txtContraseña.PasswordChar = '#';
             this.txtContraseña.Size = new System.Drawing.Size(151, 20);
             this.txtContraseña.TabIndex = 4;
             // 
             // cboModulo
             // 
             this.cboModulo.FormattingEnabled = true;
-            this.cboModulo.Location = new System.Drawing.Point(132, 119);
+            this.cboModulo.Items.AddRange(new object[] {
+            "ADM (Administracion)",
+            "SIST (Sistemas)",
+            "COM (Compras)",
+            "VTA (Ventas)"});
+            this.cboModulo.Location = new System.Drawing.Point(132, 118);
             this.cboModulo.Name = "cboModulo";
             this.cboModulo.Size = new System.Drawing.Size(151, 21);
             this.cboModulo.TabIndex = 5;
