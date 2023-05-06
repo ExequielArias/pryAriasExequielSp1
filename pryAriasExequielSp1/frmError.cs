@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace pryAriasExequielSp1
 {
-    public partial class frmBienvenida : Form
+    public partial class frmError : Form
     {
-        public frmBienvenida()
+        public frmError()
         {
             InitializeComponent();
+        }
+
+        private void cmdVolver_Click(object sender, EventArgs e)
+        {
+          this.Close();
         }
     }
 }

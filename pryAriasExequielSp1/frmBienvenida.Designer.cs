@@ -29,39 +29,29 @@
         private void InitializeComponent()
         {
             this.lblBienvenido = new System.Windows.Forms.Label();
-            this.cmdComenzar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblBienvenido
             // 
             this.lblBienvenido.AutoSize = true;
-            this.lblBienvenido.Font = new System.Drawing.Font("Calibri", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBienvenido.Location = new System.Drawing.Point(54, 53);
+            this.lblBienvenido.Font = new System.Drawing.Font("Calibri", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBienvenido.Location = new System.Drawing.Point(12, 57);
             this.lblBienvenido.Name = "lblBienvenido";
-            this.lblBienvenido.Size = new System.Drawing.Size(370, 78);
+            this.lblBienvenido.Size = new System.Drawing.Size(395, 78);
             this.lblBienvenido.TabIndex = 0;
-            this.lblBienvenido.Text = "¡Bienvenido!";
-            // 
-            // cmdComenzar
-            // 
-            this.cmdComenzar.Location = new System.Drawing.Point(152, 156);
-            this.cmdComenzar.Name = "cmdComenzar";
-            this.cmdComenzar.Size = new System.Drawing.Size(173, 54);
-            this.cmdComenzar.TabIndex = 1;
-            this.cmdComenzar.Text = "Comenzar";
-            this.cmdComenzar.UseVisualStyleBackColor = true;
-            this.cmdComenzar.Click += new System.EventHandler(this.cmdComenzar_Click);
+            this.lblBienvenido.Text = "¡Bienvenid@!";
             // 
             // frmBienvenida
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(469, 271);
-            this.Controls.Add(this.cmdComenzar);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.ClientSize = new System.Drawing.Size(410, 220);
             this.Controls.Add(this.lblBienvenido);
+            this.MaximizeBox = false;
             this.Name = "frmBienvenida";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bienvenida";
-            this.Load += new System.EventHandler(this.frmBienvenida_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -70,6 +60,5 @@
         #endregion
 
         private System.Windows.Forms.Label lblBienvenido;
-        private System.Windows.Forms.Button cmdComenzar;
     }
 }
