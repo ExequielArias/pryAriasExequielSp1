@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.lblUsuario = new System.Windows.Forms.Label();
             this.lblContraseña = new System.Windows.Forms.Label();
             this.lblModulo = new System.Windows.Forms.Label();
@@ -88,6 +89,7 @@
             // 
             // cboModulo
             // 
+            this.cboModulo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboModulo.FormattingEnabled = true;
             this.cboModulo.Items.AddRange(new object[] {
             "ADM (Administracion)",
@@ -117,6 +119,7 @@
             this.cmdCancelar.TabIndex = 7;
             this.cmdCancelar.Text = "Cancelar";
             this.cmdCancelar.UseVisualStyleBackColor = true;
+            this.cmdCancelar.Click += new System.EventHandler(this.cmdCancelar_Click);
             // 
             // frmLogin
             // 
@@ -131,6 +134,7 @@
             this.Controls.Add(this.lblModulo);
             this.Controls.Add(this.lblContraseña);
             this.Controls.Add(this.lblUsuario);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

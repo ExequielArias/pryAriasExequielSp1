@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSinterpartSRL));
             this.lblBienvenidoASintepartSRL = new System.Windows.Forms.Label();
             this.cmdComenzar = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -36,7 +37,7 @@
             // 
             this.lblBienvenidoASintepartSRL.AutoSize = true;
             this.lblBienvenidoASintepartSRL.Font = new System.Drawing.Font("Calibri", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBienvenidoASintepartSRL.Location = new System.Drawing.Point(52, 33);
+            this.lblBienvenidoASintepartSRL.Location = new System.Drawing.Point(50, 46);
             this.lblBienvenidoASintepartSRL.Name = "lblBienvenidoASintepartSRL";
             this.lblBienvenidoASintepartSRL.Size = new System.Drawing.Size(374, 39);
             this.lblBienvenidoASintepartSRL.TabIndex = 0;
@@ -44,9 +45,9 @@
             // 
             // cmdComenzar
             // 
-            this.cmdComenzar.Location = new System.Drawing.Point(145, 99);
+            this.cmdComenzar.Location = new System.Drawing.Point(172, 147);
             this.cmdComenzar.Name = "cmdComenzar";
-            this.cmdComenzar.Size = new System.Drawing.Size(173, 54);
+            this.cmdComenzar.Size = new System.Drawing.Size(118, 22);
             this.cmdComenzar.TabIndex = 1;
             this.cmdComenzar.Text = "Comenzar";
             this.cmdComenzar.UseVisualStyleBackColor = true;
@@ -56,9 +57,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(469, 183);
+            this.ClientSize = new System.Drawing.Size(469, 209);
             this.Controls.Add(this.cmdComenzar);
             this.Controls.Add(this.lblBienvenidoASintepartSRL);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "frmSinterpartSRL";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

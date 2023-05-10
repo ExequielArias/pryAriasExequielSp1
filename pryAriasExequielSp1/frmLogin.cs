@@ -37,7 +37,8 @@ namespace pryAriasExequielSp1
             frmError ventanaError = new frmError();
             frmLogin ventanaLogin = new frmLogin(); 
             bool datosOk = false;
-
+           
+           
             switch (usuario) 
             {
                 case "Adm":
@@ -59,7 +60,7 @@ namespace pryAriasExequielSp1
                     break;
                     default:                    
                     break;
-
+                    
             }
 
             if (datosOk)
@@ -84,6 +85,13 @@ namespace pryAriasExequielSp1
             {
                 this.Close();
             }
+            
         }
-}
+
+
+        private void cmdCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close(); 
+        }
+    }
 }

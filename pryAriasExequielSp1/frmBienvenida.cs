@@ -12,9 +12,16 @@ namespace pryAriasExequielSp1
 {
     public partial class frmBienvenida : Form
     {
+
         public frmBienvenida()
         {
             InitializeComponent();
+        }
+        
+        private void frmBienvenida_Load(object sender, EventArgs e)
+        {
+             
+            
         }
     }
 }

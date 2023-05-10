@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBienvenida));
             this.lblBienvenido = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -48,10 +49,12 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(410, 220);
             this.Controls.Add(this.lblBienvenido);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "frmBienvenida";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bienvenida";
+            this.Load += new System.EventHandler(this.frmBienvenida_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
