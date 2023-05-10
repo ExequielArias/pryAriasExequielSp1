@@ -66,7 +66,7 @@ namespace pryAriasExequielSp1
             if (datosOk)
             {
                 cantidadErrores = 0;
-                this.Close();
+                this.Hide();    
                 ventanaBienvenida.ShowDialog();
 
             }
