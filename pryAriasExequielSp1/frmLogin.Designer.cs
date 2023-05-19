@@ -134,6 +134,7 @@
             this.Controls.Add(this.lblModulo);
             this.Controls.Add(this.lblContraseña);
             this.Controls.Add(this.lblUsuario);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "frmLogin";

@@ -60,6 +60,7 @@
             this.ClientSize = new System.Drawing.Size(469, 209);
             this.Controls.Add(this.cmdComenzar);
             this.Controls.Add(this.lblBienvenidoASintepartSRL);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "frmSinterpartSRL";
